@@ -70,21 +70,6 @@ const NavbarManagement = () => {
       />
       {account.isActive ? <ChainSwitch /> : null}
       <ThemeSwitch />
-      <NavbarDropdownButton
-        ref={mainMenuAnchor}
-        id="composition-button"
-        aria-controls={openMainNavbarMenu ? 'composition-menu' : undefined}
-        aria-expanded={openMainNavbarMenu ? 'true' : undefined}
-        aria-haspopup="true"
-        onClick={handleOnOpenNavbarMainMenu}
-      >
-        <MenuIcon
-          sx={{
-            fontSize: '32px',
-            color: 'inherit',
-          }}
-        />
-      </NavbarDropdownButton>
     </NavbarManagementContainer>
   );
 };
